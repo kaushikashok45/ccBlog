@@ -1,0 +1,30 @@
+body{
+    max-width: 100%;
+    background-color: #f5f5dc;
+}
+
+.pageWrapper{
+    font-family: sans-serif;
+}
+
+.pageTitle h1{
+    font-family: inherit;
+    font-size: 1 em;
+    font-weight: bold;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .pageTitle h1{
+        font-family: inherit;
+        text-align: center;
+        font-size: 0.5em;
+    }
+} 

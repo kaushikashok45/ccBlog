@@ -1,0 +1,145 @@
+articlesMetaData=[{
+    "id":0,
+    "title": "Case study on cloud computing",
+    "description": "An overview on cloud computing and types of virtualisation",
+    "date": "2022-09-05",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet1.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":4
+   },
+   {
+    "id":1,
+    "title": "AWS services and EC2",
+    "description": "An overview on AWS services and EC2",
+    "date": "2022-09-05",
+    "tags": [
+      "Cloud computing",
+      "AWS"
+    ],
+    "articleFile": "worksheet2.md",
+    "keywords": "Cloud computing,AWS",
+    "readTime":5
+   },
+   {
+    "id":2,
+    "title": "Storage Virtualization",
+    "description": "Storage Virtualization using AWS",
+    "date": "2022-09-26",
+    "tags": [
+      "Cloud computing",
+      "AWS",
+      "Storage Virtualization"
+    ],
+    "articleFile": "worksheet3.md",
+    "keywords": "Cloud computing,AWS,Virtualization",
+    "readTime":5
+   },
+   {
+    "id":3,
+    "title": "Virtualization using VMBox",
+    "description": "Virtualization using VMBox",
+    "date": "2022-09-06",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet4.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":2
+   },
+   {
+    "id":4,
+    "title": "Virtual to Virtual migration",
+    "description": "Virtual to Virtual migration",
+    "date": "2022-09-06",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet5.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":2
+   },
+   {
+    "id":5,
+    "title": "Physical to Virtual migration",
+    "description": "Physical to Virtual migration",
+    "date": "2022-09-06",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet6.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":5
+   },
+   {
+    "id":6,
+    "title": "Creating a virtual EC2 Machine in AWS Public Cloud",
+    "description": "Creating a virtual EC2 Machine in AWS Public Cloud",
+    "date": "2022-09-06",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet7.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":2
+   },
+   {
+    "id":7,
+    "title": "Creating a EC2 instance accesible via remote client in AWS",
+    "description": "Creating a EC2 instance accesible via remote client in AWS",
+    "date": "2022-09-30",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet8.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":1
+   },
+   {
+    "id":8,
+    "title": "Attaching AWS EBS Volume To Amazon EC2",
+    "description": "Attaching AWS EBS Volume To Amazon EC2",
+    "date": "2022-09-30",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet9.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":3
+   },
+   {
+    "id":9,
+    "title": "Create a VPC Network in AWS for a EC2 Instance",
+    "description": "Create a VPC Network in AWS for a EC2 Instance",
+    "date": "2022-09-30",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet10.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":4
+   },
+   {
+    "id":10,
+    "title": "Create an Application load balancer for the following VPC Setup",
+    "description": "Create an Application load balancer for the following VPC Setup",
+    "date": "2022-09-30",
+    "tags": [
+      "Cloud computing",
+      "Virtualization"
+    ],
+    "articleFile": "worksheet11.md",
+    "keywords": "Cloud computing,Virtualization",
+    "readTime":3
+   }
+]
