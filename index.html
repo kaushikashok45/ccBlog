@@ -1,125 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Ashok's Cloud Computing blog</title>  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/reset.css">
-        <script type="text/javascript" src="../articles/articlesMetaData.json"></script>
-        <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="../js/index.js"></script>
-        <script src="../js/buildArticle.js"></script>
-        <script src="../js/renderPages.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script> 
-        <style type="text/tailwindcss">
-            @layer utilities {
-              .active-nav {
-                color:brown !important;
-              }
+<head>
+    <title>Email and Dropdown Fields with Select2</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.js"></script>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-              .line-clamp{
-                text-overflow:ellipsis;
-                overflow:hidden;
-                display: -webkit-box !important;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                 white-space: normal;
-                 color:rgb(30 41 59);
-              }
+            <label for="dropdown1">Dropdown 1:</label>
+            <select id="dropdown1" name="dropdown1" required>
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
 
-             
+            <label for="dropdown2">Dropdown 2:</label>
+            <select id="dropdown2" name="dropdown2" required>
+                <option value="">Select an option</option>
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+                <option value="option6">Option 6</option>
+            </select>
 
-              .mini-line-clamp{
-                text-overflow:ellipsis;
-                overflow:hidden;
-                display: -webkit-box !important;
-                -webkit-line-clamp: 7;
-                -webkit-box-orient: vertical;
-                 white-space: normal;
-                color:rgb(30 41 59);
-              }
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 
-            
-  
-              .show {
-                opacity: 1;
-              }
-
-              .invisible{
-                opacity: 0;
-                visibility: hidden;
-                transform: translate3d(-50px, 0, 0); 
-                transition: 450ms ease-out;
-                width:0;
-                height:0;
-              }
-
-              .slateblue{
-                background:slateblue;
-              }
-              .visible{
-                opacity: 1;
-                visibility:visible;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
-                position:relative;
-                z-index: 20;
-	              transition: 250ms ease-in;
-                visibility: 250ms;
-                transform: translate3d(0, 0, 0);
-              }
-  
-             
-              
-              .bg-dark{
-                background-color:#121212;
-              }
-              
-              .tilter{
-                -webkit-transform: rotate(45deg);
-                transition:transform 125ms ease-in-out;
-              }
-              
-              .minimizeArticle{
-                max-height:256px;
-                transition: max-height 450ms ease-out;
-              }
-
-              .expandArticle{
-                max-height:fit-content;
-                transition: max-height 250ms ease-in;
-              }
-           
-            }
-
-            .bg-header{
-              background-color: #2A220F;
-            }
-          </style>      
-    </head>
-    <body id="body" class="bg-slate-100 dark:bg-slate-900">
-        <div class="pageWrapper w-full h-full">
-          <div id="header" class="flex border-solid outline-b-4 outline-black bg-orange-200 dark:bg-[#1C2C50] z-20">  
-           <div class="text-center text-xl m-4 md:text-left text-3xl flex">
-             <div id="menuDiv" class="block h-7 w-7 mt-4 mr-5 md:hidden hover:cursor-pointer z-20" onclick="fullScreenNav()" aria-expanded="false" aria-label="navigation toggle"><h1 id="menu" class="dark:text-white" value="&#8801;">&#8801;</h1></div> 
-             <h1 class="z-20 dark:text-white">Ashok's Cloud Computing Blog</h1> 
-           </div> 
-           <nav class="navbar hidden m-4 md:flex">
-            <div onclick="renderPage(0)"><h1 class="text-base m-2 ml-0 md:text-xl underline decoration-dashed hover:cursor-pointer dark:text-white">/<span id="blogsnav" class="active-nav hover:text-yellow-900">Blogs</span></h1></div>
-            <div onclick="renderPage(1)"><h1 class="text-base m-2 ml-0 md:text-xl underline decoration-dashed hover:cursor-pointer dark:text-white">/<span id="aboutnav" class="hover:text-yellow-900">About</span></h1></div>
-           </nav>
-          </div>
-          <div id="phoneNav" class="block will-change-transform bg-green-100 dark:bg-[#294176] invisible md:hidden animate__animated">
-            <div id="phoneNavWrapper" class="flex flex-col justify-center content-center pt-44 space-y-12">
-             <div onclick="renderPage(2)"><h1 id="phoneblogsnav" class="dark:text-white text-4xl ml-0 md:text-xl underline decoration-dashed hover:cursor-pointer active-nav hover:text-yellow-900 text-center">Blogs</h1></div>
-             <div onclick="renderPage(3)"><h1 id="phoneaboutnav" class="dark:text-white text-4xl ml-0 md:text-xl underline decoration-dashed hover:cursor-pointer hover:text-yellow-900 text-center">About</h1></div>
-            </div> 
-          </div>
-          <div id="articles" class="contentWrapper will-change-transform">
-          </div>
-        </div>  
-    </body>
+    <script>
+        $(document).ready(function() {
+            $("#dropdown1").select2();
+            $("#dropdown2").select2();
+        });
+    </script>
+</body>
 </html>
